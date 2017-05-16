@@ -1,0 +1,329 @@
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  margin: 0; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+a,
+li,
+p,
+ul {
+  margin: 0;
+  padding: 0; }
+
+a {
+  cursor: pointer;
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+button {
+  border: 0;
+  cursor: pointer;
+  outline: none; }
+
+.container {
+  height: 100%;
+  width: 100%; }
+
+.navbar {
+  border: 1px solid #e2e2e2;
+  height: 60px; }
+
+.navbar-logo {
+  display: inline-block;
+  margin-left: 3%;
+  vertical-align: middle; }
+
+.navbar-username {
+  float: right;
+  line-height: 60px;
+  padding-right: 20px; }
+
+.navbar::before {
+  content: ' ';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+.menubar-hamburger {
+  display: none;
+  float: right; }
+  .menubar-hamburger img {
+    height: 50px;
+    position: relative;
+    top: 10px;
+    width: 50px; }
+
+.hamburger-content {
+  background-color: #ebf0f1;
+  border: 1px solid #ccc;
+  display: none;
+  padding: 10px 15px;
+  position: absolute;
+  right: 10px;
+  width: 200px;
+  z-index: 1; }
+  .hamburger-content p {
+    color: #444;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 0;
+    text-transform: uppercase; }
+
+.hamburger-content p:hover {
+  color: #999; }
+
+.menubar-hamburger:hover .hamburger-content {
+  display: block; }
+
+.sidebar {
+  background-color: #31485f;
+  height: 100%;
+  padding: 20px; }
+
+.dropdown-menu {
+  background-color: #3cddc9;
+  border: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  height: 40px;
+  margin: auto;
+  outline: none;
+  padding: 10px;
+  width: 100%; }
+
+.dropdown-content {
+  background-color: #f9f9f9;
+  display: none;
+  left: 20px;
+  position: absolute;
+  width: 248px;
+  z-index: 1; }
+  .dropdown-content a {
+    color: #444;
+    display: block;
+    font-size: 15px;
+    padding: 5px 10px; }
+
+.dropdown-content a:hover {
+  color: #3cddc9; }
+
+.dropdown-menu:hover .dropdown-content {
+  display: block; }
+
+.sidebar-options-first {
+  background-color: #223343;
+  height: 100%;
+  margin: 20px 0; }
+
+.options-block {
+  display: table;
+  padding: 15px 20px 0; }
+  .options-block p {
+    color: #fff;
+    display: table-cell;
+    padding-left: 20px;
+    vertical-align: middle; }
+  .options-block img {
+    display: table-cell;
+    vertical-align: middle; }
+
+.sidebar-location-image {
+  background-color: #00AEF2;
+  border-radius: 50%;
+  display: table-cell;
+  height: 35px;
+  vertical-align: middle;
+  width: 35px; }
+  .sidebar-location-image i {
+    color: #fff;
+    font-size: 20px;
+    left: 7px;
+    position: relative;
+    top: 2px; }
+
+.options-block-content {
+  background: #005878;
+  margin: 20px;
+  padding: 5px 10px; }
+
+.block-content-heading {
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 5px;
+  border-bottom: 1px solid;
+  width: 70px; }
+
+.block-content p {
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  width: 100px; }
+.block-content span {
+  color: #fff;
+  font-size: 13px; }
+
+.sidebar-options-menu {
+  color: #fff;
+  display: table;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 25px; }
+  .sidebar-options-menu p {
+    color: #f4f4f4;
+    display: table-cell;
+    font-size: 15px;
+    letter-spacing: .3px;
+    padding-left: 20px;
+    vertical-align: middle; }
+  .sidebar-options-menu img {
+    display: table-cell;
+    height: 30px;
+    vertical-align: middle; }
+
+.mainbar {
+  background-color: #EBF0F1;
+  height: 100%;
+  padding: 20px; }
+
+.mainbar-heading {
+  font-size: 20px;
+  letter-spacing: .3px;
+  text-align: center; }
+  .mainbar-heading i {
+    bottom: 25px;
+    float: right;
+    position: relative; }
+
+.mainbar-steps {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 30px 10px;
+  text-align: center; }
+
+.steps-name p {
+  display: inline-block; }
+.steps-name span {
+  border-bottom: 1px solid #3cddc9;
+  color: #3cddc9;
+  font-size: 14px;
+  margin-left: 5px;
+  padding: 0 15px;
+  width: 120px; }
+
+.right-border {
+  border-right: 1px solid #ccc; }
+
+.mainbar-content {
+  margin-top: 20px; }
+
+.content-steps {
+  background: #fff;
+  margin-top: 42px;
+  text-align: center;
+  width: 90%; }
+
+.content-steps-name {
+  border-bottom: 1px dotted #ccc;
+  padding: 20px 0; }
+  .content-steps-name p:nth-child(1) {
+    color: #555;
+    font-size: 15px;
+    margin: auto;
+    padding-bottom: 10px;
+    width: 40%;
+    word-spacing: 2.3px; }
+  .content-steps-name p:nth-child(2) {
+    color: #777;
+    font-size: 13px; }
+
+.content-options {
+  width: 95%; }
+
+.options-heading {
+  background: #00BCD7;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 0;
+  text-align: center; }
+  .options-heading p {
+    display: inline-block; }
+  .options-heading i {
+    color: #000;
+    bottom: 18px;
+    float: right;
+    font-size: 18px;
+    left: 7px;
+    position: relative; }
+
+.options-box {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0 15px; }
+
+.graph-img {
+  float: right; }
+
+.waves-img {
+  padding-top: 5px; }
+
+.box-heading {
+  display: inline-block;
+  padding: 5px 10px;
+  width: 100px; }
+
+.box-percent {
+  background-color: red;
+  color: #fff;
+  float: right;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 1px 3px;
+  position: relative;
+  right: 10px;
+  top: 5px; }
+
+.high-low-temp {
+  display: inline-block;
+  padding-top: 5px;
+  width: 100px;
+  vertical-align: top; }
+  .high-low-temp p {
+    color: #666;
+    font-size: 13px;
+    text-align: right; }
+
+.partner-details {
+  color: #0073B8;
+  font-size: 13px;
+  padding: 20px 10px 5px;
+  text-align: right; }
+  .partner-details p {
+    display: inline-block; }
+  .partner-details i {
+    display: inline-block;
+    font-size: 15px;
+    padding-right: 7px;
+    vertical-align: middle; }
+
+@media only screen and (max-width: 900px) {
+  .sidebar-hide {
+    display: none; }
+
+  .mainbar-100 {
+    width: 100% !important; }
+
+  .menubar-hamburger {
+    display: block; } }
+
+/*# sourceMappingURL=main.css.map */
